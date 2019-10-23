@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+		<title>海智诺英语-学习中心</title>
+		<meta name="keywords" content="海智诺英语-学习中心">
+		<meta name="description" content="海智诺英语-学习中心">
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layui.css" type="text/css" />
+		<link rel="stylesheet" href="../js/css/modules/layer/default/layer.css" type="text/css" />
+		<style>
+			.layui-form-label {
+				min-width: 270px;
+				text-align: left;
+				padding-left: 25px;
+			}
+			
+			.layui-form-select {
+				width: 100px;
+			}
+		</style>
+	</head>
+
+	<body style="background: #f4f4f4;">
+
+		<div class="class_body">
+			<div class="class_header">
+				<div style="width: 1200px;margin:0 auto;height: 100%;">
+					<ul>
+						<li>
+							<a href="../index.html">
+							<img src="../img/icon/initeflower-small.png">
+							<span>海智诺教育</span>
+							</a>
+						</li>
+						<!--<li>
+							<a href="./Course.html">选课中心</a>
+						</li>
+						<li>
+							<a href="./MyCourse.html">我的课程</a>
+						</li>
+						<li>
+							<a href="./Message.html">我的消息</a>
+						</li>
+						<li>
+							<a href="./Setting.html">设置</a>
+						</li>-->
+						<li>
+							<a href="./Help.html">帮助</a>
+						</li>
+						<li>
+							<a href="./AboutUs.html">关于我们</a>
+						</li>
+
+					</ul>
+					<div class="user_little" style="padding-top: 25px;">
+						<span style="margin-right:10px;">
+							<img  style="width: 20px;height: 20px;margin-right:2px;margin-top:-4px;"  src="../img/icon/tel.png">
+							4000-9333-91
+						</span>
+						<!--<span>welcome Back , 小明</span>
+						<img src="img/icon/11.jpg">-->
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="class_content" style="width:900px;">
+				<!--<div class="class_left">
+					<div class="class_left_userinfo">
+						<img src="img/icon/11.jpg">
+						<h3>昵称:xiaoming123</h3>
+						<p>ID:xiaoming123</p>
+						<p>ID:xiaoming123</p>
+						<div class="take_vip">开通Vip</div>
+					</div>
+					<ul class="class_left_useroption">
+						<li>
+							<a href="./MyCourse.html" class="active"><img src="img/icon/class.png">我的课程</a>
+						</li>
+						<li>
+							<a href="./Course.html"><img src="img/icon/class.png">选课中心</a>
+						</li>
+						<li>
+							<a href="./UserMes.html"><img src="img/icon/class.png">个人信息</a>
+						</li>
+						<li>
+							<a href="/ChangePws.html"><img src="img/icon/class.png">密码修改</a>
+						</li>
+						<li>
+							<a href="./Message.html"><img src="img/icon/class.png">我的消息</a>
+						</li>
+						<li>
+							<a href="./Setting.html"><img src="img/icon/class.png">系统设置</a>
+						</li>
+						<li>
+							<a href="./Connect.html"><img src="img/icon/class.png">联系方式</a>
+						</li>
+					</ul>
+				</div>-->
+				<div class="class_right" style="width:100%;">
+					<div style="background: #ffffff;height:800px;">
+						<div class="class_title">
+							当前位置 > 帮助
+						</div>
+
+						<div class="class_setting">
+							<h3>关于浏览器</h3>
+							<p class="content_p">
+								因为本系统是基于HTML5，含有较多的动画（JavaScript）与音频，因此建议您使用Chrome（谷歌浏览器），或IE10.0及其以上版本的IE浏览器，这样您才能获得更好的用户体验！
+							</p>
+                            <h3>用户注册</h3>
+							<p class="content_p">
+
+								进入注册页面，填入相关信息，用户名用英文开头，密码6-16位数，注册成功即可进入学习页面。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<p>Copyright © 2012 - 2019 海智诺教育. All Rights Reserved   辽ICP备14001879号   联系电话： 4000-9333-91</p>
+		</footer>
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script>
+			layui.use(['laypage', 'form', 'laydate'], function() {
+				var laypage = layui.laypage;
+				var form = layui.form;
+				var laydate = layui.laydate;
+
+				//监听提交
+				form.on('submit(formDemo)', function(data) {
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+				//执行一个laypage实例
+				laypage.render({
+					elem: 'PageList' //注意，这里的 test1 是 ID，不用加 # 号
+						,
+					count: 50 //数据总数，从服务端得到
+				});
+
+				laydate.render({
+					elem: '#Betting_start' //指定元素
+						,
+					value: new Date(1534766888000)
+				});
+				laydate.render({
+					elem: '#Betting_end' //指定元素
+						,
+					value: new Date(1534766888000)
+				});
+			});
+		</script>
+	</body>
+
+</html>

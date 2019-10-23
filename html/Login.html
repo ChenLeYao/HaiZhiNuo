@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+		<title>海智诺英语-登陆</title>
+		<meta name="keywords" content="海智诺英语-学习中心">
+		<meta name="description" content="海智诺英语-学习中心">
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<style>
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				background: url(../img/common/reg-bg.png) no-repeat center;
+				background-size: 100% 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='login_wrap'>
+           
+          
+			<div class="login_body" >
+				<div class="login_body_left">
+					<div>
+						<img src="../img/icon/initeflower-small.png"><span>海智诺教育</span>
+					</div>
+					<!--<p class="title">选择海智诺，成就状元梦</p>-->
+					<p class="title">海智诺教育，一秒思维英语</p>
+					<p class="getLogin">还没有账号 ？
+						<a href="./register.html">立即注册</a>
+					</p>
+				</div>
+
+				<div class="login_body_right">
+					<form method="post" οnsubmit="getLogin();" id="forms">
+						<h2><span>账号登陆</span>
+							<a href="http://dev.yimiaosiwei.com/parent.php/Login/index">教师登陆</a>
+							<a href="http://dev.yimiaosiwei.com/parent.php/Login/index">学校登陆<a/></h2>
+						<div style="padding-top: 15px;">
+							<div class="login_body_input">
+								<span>账号 ：</span><input type="text" name="Phone" placeholder="邮箱/账号/手机号" />
+							</div>
+							<div class="login_body_input">
+								<span>密码 ：</span><input type="password" name="password" placeholder="密码" />
+							</div>
+						</div>
+
+						<div class="login_button">
+							<a ><input value="登陆" type="submit"></a>
+						</div>
+					</form>
+				</div>
+
+			</div>
+			
+		</div>
+        <footer>
+			<p>Copyright © 2012 - 2019 海智诺教育. All Rights Reserved   辽ICP备14001879号   联系电话： 4000-9333-91</p>
+		</footer>
+		<script src="../js/layui.js"></script>
+		<script src="../js/common.js"></script>
+		
+		<script type="text/javascript">
+			var forms = document.getElementById('forms');
+			forms.onsubmit = function (e){
+				var sub = new Ajax();
+				
+					sub.formPublic( this ,  '/Home/StudentLogin'  , function (data){
+						if (data.code == 0 ) {
+							layer.msg(data.msg);
+							setTimeout(function(){
+								window.location.href = './MyCourse.html';
+							},1000)
+						}else{
+							layer.msg(data.msg);
+						}
+					});
+				e.preventDefault();
+				return ;
+			};
+			
+		</script>
+	</body>
+
+</html>

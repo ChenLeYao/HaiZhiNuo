@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+		<title>海智诺英语-学习中心</title>
+		<meta name="keywords" content="海智诺英语-学习中心">
+		<meta name="description" content="海智诺英语-学习中心">
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../css/layui.css" type="text/css" />
+		<link rel="stylesheet" href="../js/css/modules/layer/default/layer.css" type="text/css" />
+		<style>
+			.layui-form-label {
+				min-width: 270px;
+				text-align: left;
+				padding-left: 25px;
+			}
+			
+			.layui-form-select {
+				width: 100px;
+			}
+		</style>
+	</head>
+
+	<body style="background: #f4f4f4;">
+
+		<div class="class_body">
+			<div class="class_header">
+				<div style="width: 1200px;margin:0 auto;height: 100%;">
+					<ul>
+						<li>
+							<a href="./UnitStudy.html">
+								<img src="../img/icon/initeflower-small.png">
+								<span>海智诺教育</span>
+							</a>
+						</li>
+						<li>
+							<a href="./Course.html">选课中心</a>
+						</li>
+						<li>
+						    <a href="./MyCourse.html">我的课程</a>
+					    </li>
+					    <li>
+						    <a href="./Message.html">我的消息</a>
+					    </li>
+					     <li>
+						    <a href="./Setting.html">设置</a>
+					    </li>
+					    <li>
+							<a href="./Help.html" target="_blank">帮助</a>
+						</li>
+						<li>
+							<a href="./AboutUs.html" target="_blank">关于我们</a>
+						</li>
+
+					</ul>
+					<div class="user_little">
+						<a href="./UnitStudy.html">
+							<span>welcome Back , 小明</span>
+							<img src="../img/icon/11.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="class_content">
+				<div class="class_left">
+					<div class="class_left_userinfo">
+						<img src="../img/icon/11.jpg">
+						<h3>昵称:xiaoming123</h3>
+						<h3>可用余额:20</h3>
+						<div class="take_vip">
+						<a href="./Course.html">选课中心</a></div>
+					</div>
+					<ul class="class_left_useroption">
+						<li>
+							<a>我的课程</a>
+							<ul>
+								<li>
+									<a  href="./MyCourse.html">外研社一年级下册</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>过期课程</a>
+							<ul>
+								<li>
+									<a  href="./OverCourse.html">外研社二年级下册</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>设置</a>
+							<ul>
+								<li>
+									<a href="./UserMes.html">个人信息</a>
+								</li>
+								<li>
+									<a  href="./ChangePws.html">密码修改</a>
+								</li>
+								<li>
+					                 <a href="./Message.html">我的消息</a>
+				                </li>
+				                <li>
+									<a href="./Setting.html">系统设置</a>
+								</li>
+								<li>
+									<a href="./Connect.html">联系方式</a>
+								</li>
+								<li>
+									<a href="javascript:TipMessage();">退出登录</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="class_right">
+					<div style="background: #ffffff;">
+						<div class="class_title">
+							当前位置 > 基础设置
+						</div>
+
+						<div class="class_setting">
+							<form class="layui-form" action="">
+								<div class="base_setting">
+
+									<div class="layui-form-item">
+										<label class="layui-form-label"> 自动播放右脑记忆辅助音频（Alpha音乐） </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  自动复习(登陆时的强行复习)  </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  强行测试(登陆时进行单词本的强行测试)  </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  单词识别倒计时  </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  逆向记忆  </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  强行单元测试（单元学习后进行强行测试） </label>
+										<div class="layui-input-block">
+											<input type="radio" name="sex" value="开启" title="开启" checked="">
+											<div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i>
+												<div>男</div>
+											</div>
+											<input type="radio" name="sex" value="关闭" title="关闭">
+											<div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i>
+												<div>女</div>
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">  单元学习每组单词个数 </label>
+
+										<div class=" layui-input-inline">
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="3">3个</option>
+												<option value="5">5个</option>
+											</select>
+										</div>
+									</div>
+
+								</div>
+
+								<!--高级设置-->
+								<div class="class_title">
+									高级设置
+								</div>
+								<div class="base_setting">
+									<div class="layui-form-item">
+										<label class="layui-form-label">  最大复习单词数(自动复习的单词数量) </label>
+										<div class=" layui-input-inline">
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="2">2</option>
+												<option value="10">10</option>
+												<option value="20">20</option>
+												<option value="30">30</option>
+												<option value="40">40</option>
+												<option value="50">50</option>
+											</select>
+										</div>
+
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">  单词拼写倒计时 </label>
+
+										<div class=" layui-input-inline">
+
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="5">5秒</option>
+												<option value="8">8秒</option>
+												<option value="10">10秒</option>
+												<option value="15">15秒</option>
+												<option value="20">20秒</option>
+												<option value="30">30秒</option>
+											</select>
+										</div>
+
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">  强行单元测试倒计时 </label>
+
+										<div class=" layui-input-inline">
+
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="5">5秒</option>
+												<option value="8">8秒</option>
+												<option value="10">10秒</option>
+											</select>
+										</div>
+
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">  强行单词本测试倒计时 </label>
+
+										<div class=" layui-input-inline">
+
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="5">5秒</option>
+												<option value="8">8秒</option>
+												<option value="10">10秒</option>
+											</select>
+										</div>
+
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">  单元学习每组单词个数 </label>
+
+										<div class=" layui-input-inline">
+
+											<select name="city" lay-verify="" class="BettingSelect">
+												<option value="3">3个</option>
+												<option value="5">5个</option>
+											</select>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="layui-form-item" style="text-align: center;">
+									<button type="button" class="layui-btn layui-btn-lg" style="    background: #63cd90;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 44px;">保存设置</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		 <footer>
+			<p>Copyright © 2012 - 2019 海智诺教育. All Rights Reserved   辽ICP备14001879号   联系电话： 4000-9333-91</p>
+		</footer>
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script>
+			layui.use(['laypage', 'form', 'laydate'], function() {
+				var laypage = layui.laypage;
+				var form = layui.form;
+				var laydate = layui.laydate;
+
+				//监听提交
+				form.on('submit(formDemo)', function(data) {
+					layer.msg(JSON.stringify(data.field));
+					return false;
+				});
+				//执行一个laypage实例
+				laypage.render({
+					elem: 'PageList' //注意，这里的 test1 是 ID，不用加 # 号
+						,
+					count: 50 //数据总数，从服务端得到
+				});
+
+				laydate.render({
+					elem: '#Betting_start' //指定元素
+						,
+					value: new Date(1534766888000)
+				});
+				laydate.render({
+					elem: '#Betting_end' //指定元素
+						,
+					value: new Date(1534766888000)
+				});
+			});
+		</script>
+	</body>
+
+</html>

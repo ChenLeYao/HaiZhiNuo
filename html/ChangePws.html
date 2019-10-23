@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+		<title>海智诺英语-学习中心</title>
+		<meta name="keywords" content="海智诺英语-学习中心">
+		<meta name="description" content="海智诺英语-学习中心">
+		<link rel="stylesheet" href="../css/common.css" type="text/css" />
+		<link rel="stylesheet" href="../js/font/iconfont.woff2" />
+		<link rel="stylesheet" href="../js/font/iconfont.ttf" />
+		<link rel="stylesheet" href="../js/font/iconfont.woff" />
+		<link rel="stylesheet" href="../css/layui.css" type="text/css" />
+		<link rel="stylesheet" href="../js/css/modules/layer/default/layer.css" type="text/css" />
+		<style>
+			.layui-form-label {
+				min-width: 270px;
+				text-align: left;
+				padding-left: 25px;
+			}
+			
+			.layui-form-select {
+				width: 100px;
+			}
+			
+			.layui-form-label {
+				min-width: 80px;
+				text-align: left;
+				padding-left: 25px;
+			}
+		</style>
+	</head>
+
+	<body style="background: #f4f4f4;">
+
+		<div class="class_body">
+			<div class="class_header">
+				<div style="width: 1200px;margin:0 auto;height: 100%;">
+					<ul>
+						<li>
+							<a href="./UnitStudy.html">
+								<img src="../img/icon/initeflower-small.png">
+								<span>海智诺教育</span>
+							</a>
+						</li>
+						<li>
+							<a href="./Course.html">选课中心</a>
+						</li>
+						<li>
+							<a href="./MyCourse.html">我的课程</a>
+						</li>
+						<li>
+							<a href="./Message.html">我的消息</a>
+						</li>
+						<li>
+							<a href="./Setting.html">设置</a>
+						</li>
+						<li>
+							<a href="./Help.html" target="_blank">帮助</a>
+						</li>
+						<li>
+							<a href="./AboutUs.html" target="_blank">关于我们</a>
+						</li>
+
+					</ul>
+					<div class="user_little">
+						<a href="./UnitStudy.html">
+							<span>welcome Back , 小明</span>
+							<img src="../img/icon/11.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="class_content">
+				<div class="class_left">
+					<div class="class_left_userinfo">
+						<img src="../img/icon/11.jpg">
+						<h3>昵称:xiaoming123</h3>
+						<h3>可用余额:20</h3>
+						<div class="take_vip"><a href="./Course.html">选课中心</a></div>
+					</div>
+					<ul class="class_left_useroption">
+						<li>
+							<a>我的课程</a>
+							<ul>
+								<li>
+									<a  href="./MyCourse.html">外研社一年级下册</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>过期课程</a>
+							<ul>
+								<li>
+									<a  href="./OverCourse.html">外研社二年级下册</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a>设置</a>
+							<ul>
+								<li>
+									<a href="./UserMes.html">个人信息</a>
+								</li>
+								<li>
+									<a  href="./ChangePws.html">密码修改</a>
+								</li>
+								<li>
+					                 <a href="./Message.html">我的消息</a>
+				                </li>
+				                <li>
+									<a href="./Setting.html">系统设置</a>
+								</li>
+								<li>
+									<a href="./Connect.html">联系方式</a>
+								</li>
+								<li>
+									<a href="javascript:TipMessage();">退出登录</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="class_right">
+					<div style="background: #ffffff;height: 400px;">
+						<div class="class_title">
+							当前位置 > 修改密码
+						</div>
+						<div class="class_mes_title">
+							修改密码：建议使用复杂密码，使用数字和字母组合。
+						</div>
+						<div class="class_setting" style="padding-top: 20px;border: 1px solid #e6e6e6;width: 95%;margin: 0 auto;margin-top: 20px;height:230px;">
+
+							<form class="layui-form" style="margin:0 auto;width: 400px;" id="forms" method="post">
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">原密码</label>
+										<div class="layui-input-inline">
+											<input type="tel" name="phone" data-type = "password" class="layui-input">
+										</div>
+									</div>
+
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">新密码</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email" data-type = "password"  class="layui-input">
+										</div>
+									</div>
+
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-inline">
+										<label class="layui-form-label">确认新密码</label>
+										<div class="layui-input-inline">
+											<input type="text" name="email"data-type = "password" class="layui-input">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="layui-form-item">
+									<label class="layui-form-label"></label>
+									<div class="layui-inline">
+										<button class="layui-btn" lay-submit="" lay-filter="demo1">确认修改</button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<p>Copyright © 2012 - 2019 海智诺教育. All Rights Reserved   辽ICP备14001879号   联系电话： 4000-9333-91</p>
+		</footer>
+		<script type="text/javascript" src="../js/layui.js"></script>
+		<script type="text/javascript" src="../js/common.js"></script>
+		<script>
+			
+			<script type="text/javascript">
+				var forms = document.getElementById('forms');
+				forms.onsubmit = function (e){
+					var sub = new Ajax();
+						sub.formPublic( this ,  '/Home/StudentLogin'  , function (data){
+							if (data.code == 0 ) {
+								layer.msg(data.msg);
+								setTimeout(function(){
+									window.location.href = './MyCourse.html';
+								},1000)
+							}else{
+								layer.msg(data.msg);
+							}
+						});
+					e.preventDefault();
+					return ;
+				};
+				
+			</script>
+		</script>
+	</body>
+
+</html>
